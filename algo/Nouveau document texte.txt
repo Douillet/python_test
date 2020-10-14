@@ -1,0 +1,42 @@
+#dièse pour faire des commentaires
+def setup():
+    #permet de commencer à coder
+    print("Hello World")
+    #print permet d'écrire sur le rendu
+    size(400, 400)
+    #permet de définir la taille de la fenêtre de rendu
+    fill(120, 0, 0)
+    #définit la couleur avec les coordonnées avec le Rouge, Vert, Bleu
+    ellipse(100, 100, 40, 80)
+    #Permet de créer une ellipse les deux premiers nombres sont les coordonnées (largeur, hauteur) et les deux derniers sont les dimensions se l'ellipse (largeur, hauteur)
+    fill(50, 50, 180)
+    ellipse(200, 200, 40, 80)
+    frameRate(120)
+    #permet de régler les images pas secondes sur le rendu
+    
+def draw():
+    fill(255)
+    ellipse(mouseX, mouseY, 80, 80)
+
+_________________________
+
+#dièse pour faire des commentaires
+def setup():
+    #permet de commencer à coder
+    print("Hello World")
+    #print permet d'écrire sur le rendu
+    size(400, 400)
+    #permet de définir la taille de la fenêtre de rendu
+    clear()
+    #permet de nettoyer la fenêtre
+    frameRate(60)
+    #permet de régler les images pas secondes sur le rendu
+    
+def draw():
+    fill(255)
+    clear()
+    #on récupère les coordonnées de la souris avec mouseX et mouse Y
+    #permet de nettoyer tous les cercles dessinés à chaque frame
+    #ellipse(mouseX, mouseY, 10, 10)
+    
+    ellipse(width/2 + sin(millis() *0.005) *10 , height/2 + cos(millis() * 0.005) * 10, 40, 40)
